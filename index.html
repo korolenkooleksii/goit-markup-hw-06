@@ -564,6 +564,8 @@
       </div>
     </footer>
 
+    <!-- Модальное окно и форма -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
@@ -571,6 +573,34 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+        <form name="request">
+
+          <label for="name">Ім'я</label>
+          <input type="text" name="user-name" id="name" />
+
+          <label for="phone">Телефон</label>
+          <input type="tel" name="phone-number" id="phone" />
+
+          <label for="mail">Пошта</label>
+          <input type="email" name="mail" id="mail" />
+
+          <label for="comment">Коментар</label>
+          <textarea
+            name="comment"
+            rows="5"
+            placeholder="Введіть текст"
+            id="comment"
+          ></textarea>
+
+          <input type="checkbox" name="agree" value="agree" id="agree" />
+          <label for="agree"
+            >Погоджуюся з розсилкою та приймаю Умови договору</label
+          >
+
+          <button class="request-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
 

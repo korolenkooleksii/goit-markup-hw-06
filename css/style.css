@@ -730,6 +730,7 @@ body {
   border-radius: 4px;
 
   transition: transform 500ms ease-in-out;
+  padding: 40px;
 }
 
 .modal-button {
@@ -756,3 +757,36 @@ body {
 .modal-button:focus .modal-icon {
   color: var(--accent-color);
 }
+
+.modal-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.request-button {
+
+  border: none;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition: background-color var(--timing-function);
+
+}
+
+.request-button:hover,
+.request-button:focus {
+  background-color: var(--accent-hero-btn);
+}
+
