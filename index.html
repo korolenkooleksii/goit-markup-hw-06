@@ -561,6 +561,18 @@
             </li>
           </ul>
         </div>
+        <div class="footer-request">
+          <p class="footer-title">Підпишіться на розсилку</p>
+          <form class="footer-form-request">
+            <input type="email" class="footer-form-input" name="mail" placeholder="E-mail">
+            <button type="submit" class="footer-button">
+              <span class="footer-button-label">Підписатися</span>
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -575,29 +587,44 @@
         </button>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
 
-        <form name="request">
+        <form class="form" name="request">
+          <div class="form-field">
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="text" class="form-input" name="user-name" id="name" />
+          </div>
 
-          <label for="name">Ім'я</label>
-          <input type="text" name="user-name" id="name" />
+          <div class="form-field">
+            <label for="phone" class="form-label">Телефон</label>
+            <input
+              type="tel"
+              class="form-input"
+              name="phone-number"
+              id="phone"
+            />
+          </div>
 
-          <label for="phone">Телефон</label>
-          <input type="tel" name="phone-number" id="phone" />
+          <div class="form-field">
+            <label for="mail" class="form-label">Пошта</label>
+            <input type="email" class="form-input" name="mail" id="mail" />
+          </div>
 
-          <label for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail" />
+          <div class="form-textarea">
+            <label for="comment" class="form-label">Коментар</label>
+            <textarea
+              name="comment"
+              class="form-comment"
+              placeholder="Введіть текст"
+              id="comment"
+            ></textarea>
+          </div>
 
-          <label for="comment">Коментар</label>
-          <textarea
-            name="comment"
-            rows="5"
-            placeholder="Введіть текст"
-            id="comment"
-          ></textarea>
-
-          <input type="checkbox" name="agree" value="agree" id="agree" />
-          <label for="agree"
-            >Погоджуюся з розсилкою та приймаю Умови договору</label
-          >
+          <div class="checkbox">
+            <input type="checkbox" name="agree" value="agree" id="agree" />
+            <label for="agree" class="checkbox-label"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#" class="checkbox-link">Умови договору</a>
+            </label>
+          </div>
 
           <button class="request-button" type="submit">Відправити</button>
         </form>
