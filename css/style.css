@@ -917,10 +917,25 @@ body {
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
+  background-position: center;
+  border-radius: 2px;
+  outline: none;
 }
 
+.checkbox-icon:hover {
+  fill: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-position: center;
+  border-radius: 2px;
+  outline: none;
+}
+
+
 .checkbox-label {
-  margin-left: 25px;
+  padding-left: 25px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
