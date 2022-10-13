@@ -820,6 +820,8 @@ body {
   margin-bottom: 12px;
 }
 
+/* ---------------- ФОРМА -------------------- */
+
 .form-field {
   position: relative;
   display: flex;
@@ -909,35 +911,31 @@ body {
 
 .checkbox-icon {
   position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: fill var(--timing-function), background-color var(--timing-function), background-image var(--timing-function);
 }
 
-.checkbox-input:checked ~ .checkbox-icon {
+.checkbox-input:checked + .checkbox-icon {
   fill: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  background-position: center;
-  border-radius: 2px;
-  outline: none;
 }
 
-.checkbox:focus-within > .checkbox-icon{
-  fill: red;
-}
-
-
-.checkbox-icon:hover {
+.checkbox-input:hover + .checkbox-icon {
   fill: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  background-position: center;
-  border-radius: 2px;
-  outline: none;
 }
 
+.checkbox-input:focus + .checkbox-icon {
+  fill: var(--accent-color);
+}
 
 .checkbox-label {
   padding-left: 25px;
