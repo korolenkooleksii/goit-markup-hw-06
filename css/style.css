@@ -922,6 +922,11 @@ body {
   outline: none;
 }
 
+.checkbox:focus-within > .checkbox-icon{
+  fill: red;
+}
+
+
 .checkbox-icon:hover {
   fill: var(--accent-color);
   background-color: var(--accent-color);
